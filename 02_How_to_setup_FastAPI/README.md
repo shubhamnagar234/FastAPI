@@ -122,3 +122,65 @@ FastAPI provides better performance and scalability for modern APIs, especially 
 - Automatic Input Validation.
 - Auto-Generated Interactive Documentation.
 - Seamless Integration with Modern Ecosystem (ML/DL Libraries, OAuth, JWT, SQL Alchemy, Docker, Kubernetes etc.)
+
+## Code Demo: Understanding `main.py`
+
+Let's look at a basic FastAPI application. Here is the code from `main.py`:
+
+```python
+from fastapi import FastAPI
+
+app = FastAPI()
+
+@app.get("/")
+def hello():
+    return {"message": "Hello World"}
+
+@app.get("/about")
+def about():
+    return {"message":  "About FastAPI"}
+```
+
+### Deep Explanation of the Code
+
+- **`from fastapi import FastAPI`**: This imports the `FastAPI` class from the `fastapi` module, which provides all the functionality needed to build the API.
+- **`app = FastAPI()`**: This creates an instance of the `FastAPI` class. This `app` instance is the main point of interaction to create the API. It is also what the ASGI server (like Uvicorn) uses to serve the application.
+- **`@app.get("/")`**: This is a path operation decorator. 
+  - `@` tells Python this is a decorator.
+  - `app` refers to the FastAPI instance created earlier.
+  - `get` refers to the HTTP GET method (used to read data).
+  - `"/"` is the path or route. In this case, it's the root URL.
+- **`def hello():`**: This is the path operation function. It gets called whenever a GET request is made to the `"/"` URL.
+- **`return {"message": "Hello World"}`**: The function returns a Python dictionary. FastAPI automatically converts this dictionary into JSON format and sends it back to the client as an HTTP response. The same logic applies to the `/about` endpoint.
+
+## How to Run the FastAPI Application
+
+To run the FastAPI application, you need an ASGI server. The recommended server is **Uvicorn**.
+
+### 1. Install Dependencies
+If you haven't installed FastAPI and Uvicorn yet, open your terminal and run:
+```bash
+pip install fastapi "uvicorn[standard]"
+```
+
+### 2. Run the Server
+Navigate to the directory containing your `main.py` file and execute the following command:
+```bash
+uvicorn main:app --reload
+```
+
+**Understanding the command:**
+- `uvicorn`: Starts the Uvicorn server.
+- `main`: Refers to the file `main.py` (the Python module).
+- `app`: Refers to the `FastAPI` instance created inside `main.py` (`app = FastAPI()`).
+- `--reload`: Automatically restarts the server whenever you make code changes. This is highly recommended for development.
+
+### 3. Access the API
+Once the server is running, you can access your API in a web browser:
+- Root Endpoint: http://127.0.0.1:8000/
+- About Endpoint: http://127.0.0.1:8000/about
+
+**Automatic Documentation:**
+FastAPI automatically generates interactive API documentation. You can access it at:
+- Swagger UI: http://127.0.0.1:8000/docs
+- ReDoc: http://127.0.0.1:8000/redoc
