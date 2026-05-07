@@ -83,3 +83,6 @@ In this case:
   - Set **default values**
   - Enforce **validation rules**
   - Add **metadata** like description, title, examples
+
+![HTTPS Status Codes](images/query_params.png)
+
