@@ -112,3 +112,70 @@ Most backend applications revolve around CRUD operations.
 | Delete | DELETE | Remove data |
 
 CRUD operations are the foundation of modern APIs and database-driven applications.
+
+## JSON Data Flow in Applications
+
+- How JSON data is used in modern applications to transfer information between systems and user interfaces.
+
+### Project Overview
+
+1. Patient data is stored in JSON format.
+2. The JSON object acts as a structured data container.
+3. The application reads the JSON data.
+4. The frontend form displays or processes the received information.
+
+![JSON Data Flow in Applications](images/project_overview.png)
+
+---
+
+### Why JSON is Important
+
+JSON (JavaScript Object Notation) is one of the most commonly used data formats in APIs and backend systems because it is:
+
+- Lightweight
+- Human readable
+- Easy to parse
+- Language independent
+- Widely supported across platforms
+
+---
+
+### Real World Usage
+
+JSON is commonly used in:
+- REST APIs
+- Mobile applications
+- Frontend-backend communication
+- Database responses
+- Machine Learning APIs
+- Healthcare and patient management systems
+
+---
+
+### Example JSON Structure
+
+```json
+{
+    "id": "P001",
+    "name": "Priya Nair",
+    "city": "Bangalore",
+    "age": 31,
+    "gender": "female",
+    "height":1.60,
+    "weight": 62.5,
+    "bmi": 24.41,
+    "verdict": "Healthy"
+}
+
+{
+    "id": "P002",
+    "name": "Arjun Patel",
+    "city": "Ahmedabad",
+    "age": 42,
+    "gender": "male",
+    "height":1.78,
+    "weight": 92,
+    "bmi": 29.02,
+    "verdict": "Overweight"
+}
+
