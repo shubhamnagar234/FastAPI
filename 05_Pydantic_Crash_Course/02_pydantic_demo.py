@@ -1,0 +1,19 @@
+from pydantic import BaseModel
+
+class Patient(BaseModel):
+
+    name: str
+    age: int
+
+def insert_patient_data(patient: Patient):
+
+    print(patient.name)
+    print(patient.age)
+    print("inserted into database")
+
+patient_info = { "name": "shubham", "age": 20 }
+
+patient1 = Patient(**patient_info)
+
+print(patient1)
+insert_patient_data(patient1)
