@@ -48,15 +48,5 @@
     "weight": 88,
     "bmi": 29.07,
     "verdict": "Overweight"
-  },
-  "P006": {
-    "name": "Sohan Gupta",
-    "city": "Pune",
-    "age": 20,
-    "gender": "male",
-    "height": 180.0,
-    "weight": 85.0,
-    "bmi": 26.2,
-    "verdict": "Underweight"
   }
 }
