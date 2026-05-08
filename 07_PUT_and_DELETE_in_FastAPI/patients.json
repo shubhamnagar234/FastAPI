@@ -1,0 +1,62 @@
+{
+  "P001": {
+    "name": "Rahul Deshmukh",
+    "city": "Hyderabad",
+    "age": 26,
+    "gender": "male",
+    "height": 1.72,
+    "weight": 68,
+    "bmi": 22.99,
+    "verdict": "Healthy"
+  },
+  "P002": {
+    "name": "Meera Joshi",
+    "city": "Jaipur",
+    "age": 31,
+    "gender": "female",
+    "height": 1.58,
+    "weight": 82,
+    "bmi": 32.85,
+    "verdict": "Obese"
+  },
+  "P003": {
+    "name": "Karan Malhotra",
+    "city": "Chandigarh",
+    "age": 24,
+    "gender": "male",
+    "height": 1.81,
+    "weight": 59,
+    "bmi": 18.01,
+    "verdict": "Underweight"
+  },
+  "P004": {
+    "name": "Aditi Rao",
+    "city": "Chennai",
+    "age": 37,
+    "gender": "female",
+    "height": 1.67,
+    "weight": 72,
+    "bmi": 25.82,
+    "verdict": "Overweight"
+  },
+  "P005": {
+    "name": "Vikram Singh",
+    "city": "Lucknow",
+    "age": 45,
+    "gender": "male",
+    "height": 1.74,
+    "weight": 88,
+    "bmi": 29.07,
+    "verdict": "Overweight"
+  },
+  "P006": {
+    "name": "Sohan Gupta",
+    "city": "Pune",
+    "age": 20,
+    "gender": "male",
+    "height": 180.0,
+    "weight": 85.0,
+    "bmi": 26.2,
+    "verdict": "Underweight"
+  }
+}
