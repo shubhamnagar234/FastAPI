@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multiplication Table</title>
+</head>
+<body>
+    <h2>Generate Multiplication Table</h2>
+    <form method="POST">
+        <input
+            type="number"
+            name="number"
+            placeholder="Enter number"
+            required
+        >
+        <button type="submit">
+            Generate
+        </button>
+    </form>
+    {% if table %}
+        <h3>Table:</h3>
+
+        {% for row in table %}
+            <p>{{ row }}</p>
+        {% endfor %}
+
+    {% endif %}
+</body>
+</html>
