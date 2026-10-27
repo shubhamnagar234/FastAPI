@@ -1,0 +1,15 @@
+# Core FastAPI & ASGI Server
+fastapi>=0.115.0
+uvicorn[standard]>=0.34.0
+pydantic>=2.10.0
+pydantic-core>=2.27.0
+
+# Machine Learning & Data Processing
+scikit-learn>=1.6.0
+pandas>=2.2.0
+numpy>=2.0.0
+joblib>=1.4.0
+
+# Frontend & HTTP Client
+streamlit>=1.40.0
+requests>=2.31.0

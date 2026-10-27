@@ -88,7 +88,7 @@ In this setup, the backend handles application logic while the ML model performs
 
 The API exposes endpoints that allow frontend applications to interact with machine learning services in real time.
 
-![ML Powered Backend Architecture](images/api_ml_perspective1.png)
+![ML Powered Backend Architecture](images/api_ml_perspective2.png)
 
 ### Multi Platform API Architecture
 
@@ -96,4 +96,4 @@ This diagram shows how a single API can support different frontend platforms inc
 
 Using a shared backend improves scalability, simplifies maintenance, and ensures consistent data flow across all platforms.
 
-![Multi Platform API Architecture](images/api_ml_perspective1.png)
+![Multi Platform API Architecture](images/api_ml_perspective3.png)
